@@ -1,9 +1,7 @@
---// beamed.wtf [UI] \\--
-
 local RunService = game:GetService("RunService")
 -- settings (so u dont have to scroll)
 local settings = {
-    folder_name = "beamed.wtf";
+    folder_name = "dextromethorphan";
     default_accent = Color3.fromRGB(255,255,255);
     drag_easying_style = "Quad";
     drag_easying_direction = "Out";
@@ -1599,7 +1597,7 @@ function library:init_window(cfg)
         local inline_outline = utility.outline(esp_preview_window, Color3.fromRGB(50,50,50), 4);
         utility.outline(inline_outline, Color3.fromRGB(0,0,0), 4);
 
-        local window_title = utility.create("Text", {Text = "ESP Preview", Parent = esp_preview_window, Visible = true, Transparency = 1, Color = Color3.new(208,123,255), Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,6,0,3), ZIndex = 6});
+        local window_title = utility.create("Text", {Text = "ESP Preview", Parent = esp_preview_window, Visible = true, Transparency = 1, Color = Color3.new(208, 123, 255), Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,6,0,3), ZIndex = 6});
         local inner_window = utility.create("Square", {Parent = esp_preview_window; Size = UDim2.new(0,219,0,313); Position = UDim2.new(0,6,0,19), Color = Color3.fromRGB(15,15,15), Thickness = 1, Filled = true, ZIndex = 2}); do  
             local inline_outline = utility.outline(inner_window, Color3.fromRGB(50,50,50), 4);
             utility.outline(inline_outline, Color3.fromRGB(0,0,0), 4);
@@ -1612,7 +1610,7 @@ function library:init_window(cfg)
         -- // Toros
         local esp_torso = utility.create("Square", {Parent = inner_window; Size = UDim2.new(0, 147, 0, 77), Position = UDim2.new(0, 39, 0, 125), Color = Color3.fromRGB(255, 255, 255), Thickness = 1, Filled = true, ZIndex = 5});
         local esp_torso_outline = utility.outline(esp_torso, Color3.fromRGB(0, 0, 0), 4);
-        
+
         -- // Legs
         local esp_legs = utility.create("Square", {Parent = inner_window; Size = UDim2.new(0, 73, 0, 78), Position = UDim2.new(0, 77, 0, 203), Color = Color3.fromRGB(255, 255, 255), Thickness = 1, Filled = true, ZIndex = 5});
         local esp_legs_outline = utility.outline(esp_legs, Color3.fromRGB(0, 0, 0), 4);
